@@ -1,0 +1,33 @@
+{
+  "name": "@qmoosa/pqc-mlkem-dashboard",
+  "version": "1.0.0",
+  "description": "QMOOSA Post-Quantum Cryptography Dashboard — Web4 PQC Key Exchange Terminal, Telemetry & Entropy Monitor",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run build && node --test tests/dashboard.test.mjs",
+    "lint": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@qmoosa/pqc-mlkem-protocol": "file:../qmoosa-pqc-mlkem-protocol",
+    "@qmoosa/pqc-mlkem-engine": "file:../qmoosa-pqc-mlkem-engine",
+    "@qmoosa/pqc-mlkem-sdk": "file:../qmoosa-pqc-mlkem-sdk"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.7",
+    "typescript": "^5.4.5"
+  },
+  "keywords": [
+    "qmoosa",
+    "pqc",
+    "dashboard",
+    "entropy-monitor",
+    "web4",
+    "ml-kem",
+    "fips-203"
+  ],
+  "author": "elon00",
+  "license": "MIT"
+}
