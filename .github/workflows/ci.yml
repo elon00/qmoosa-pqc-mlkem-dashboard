@@ -11,26 +11,26 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout dashboard repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           path: qmoosa-pqc-mlkem-dashboard
 
       - name: Checkout protocol repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           repository: elon00/qmoosa-pqc-mlkem-protocol
           ref: main
           path: qmoosa-pqc-mlkem-protocol
 
       - name: Checkout engine repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           repository: elon00/qmoosa-pqc-mlkem-engine
           ref: main
           path: qmoosa-pqc-mlkem-engine
 
       - name: Checkout sdk repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           repository: elon00/qmoosa-pqc-mlkem-sdk
           ref: main
